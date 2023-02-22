@@ -1,0 +1,52 @@
+@import "descriptor.css";
+@import "summary.css";
+@import "services.css";
+@import "advantage.css";
+@import "faq.css";
+@import "connection.css";
+body {
+  margin: 0;
+  font-family: "Rubik", sans-serif;
+}
+* {
+  box-sizing: border-box;
+}
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.logo {
+  margin-bottom: 40px;
+}
+.main .container {
+  align-items: center;
+}
+nav.nav-main {
+  display: flex;
+  justify-content: flex-end;
+  text-decoration: none;
+  margin: 32px 17px;
+  border-bottom: 2px solid transparent;
+}
+nav.nav-main a {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #231f20;
+  flex: none;
+  order: 1;
+  flex-grow: 0;
+  text-decoration: none;
+  margin: 15px 30px;
+  border-bottom: 2px solid transparent;
+  transition: 1s;
+  text-align: center;
+}
+nav.nav-main a:hover {
+  transform: scale(1.2);
+}
+nav.nav-main a:hover {
+  border-bottom: 3px solid black;
+}

@@ -1,0 +1,27 @@
+.summary .title {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 47px;
+  letter-spacing: 0.02em;
+  color: #231f20;
+  margin-top: 100px;
+  margin-bottom: 30px;
+}
+.points-text {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 145%;
+  letter-spacing: 0.02em;
+  text-indent: 30px;
+  color: #231f20;
+  background: url(../img/Subtract.png) no-repeat;
+}
+.list {
+  display: flex;
+  margin-bottom: 100px;
+}
+.points {
+
+}

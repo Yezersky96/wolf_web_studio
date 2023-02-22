@@ -1,0 +1,33 @@
+.block-contacts {
+    display: flex;
+    justify-content: space-between;
+}
+.connection .title {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 47px;
+    letter-spacing: 0.02em;
+    color: #231F20;
+    padding-top: 100px;
+    margin-bottom: 30px;
+}
+.block-contacts .title {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 145%;
+    letter-spacing: 0.02em;
+    color: #231F20;
+    margin-bottom: 2px;
+}
+.message {
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 145%;
+    letter-spacing: 0.02em;
+    color: #231F20;
+    margin-bottom: 100px;
+}
