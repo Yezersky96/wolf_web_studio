@@ -1,0 +1,96 @@
+.footer {
+    background: #000000;
+    border-radius: 20px 20px 0 0;
+}
+.block  {
+    padding-bottom: 70px;
+    display: flex;
+    padding-top: 70px
+}
+.block-footer {
+    display: flex;
+    width: 16%;
+    margin-right: 170px;
+}
+.block-services {
+    display: grid;
+    margin-right: 130px;
+}
+.footer-block {
+    display: flex;
+    width: 100%;
+}
+.block-menu {
+    display: grid;
+    margin-right: 160px;
+}
+.block-contact  {
+    /*width: 20%;*/
+}
+.block-services {
+    /*width: 30%;*/
+}
+.block-title {
+    margin-top: 0;
+    margin-bottom: 5px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 145%;
+    letter-spacing: 0.02em;
+    color: #F8F8F8;
+}
+.text-logo-footer {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #F8F8F8;
+    margin-bottom: 5px;
+}
+.text-footer {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 145%;
+    letter-spacing: 0.02em;
+    color: #F8F8F8;
+    text-decoration: none;
+}
+.text-footer:hover {
+    color: #ffbc4e;
+}
+.message-footer {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 170%;
+    letter-spacing: 0.02em;
+    color: #F8F8F8;
+    padding-bottom: 0;
+    text-decoration: none;
+}
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    display: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #6c5ce7;
+    color: white;
+    text-align: center;
+    font-size: 24px;
+    line-height: 50px;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+}
+
+.back-to-top:hover {
+    background-color: #ffbc4e;
+}
+
+.back-to-top i {
+    transform: rotate(-45deg);
+}

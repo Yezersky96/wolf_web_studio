@@ -4,6 +4,8 @@
 @import "advantage.css";
 @import "faq.css";
 @import "connection.css";
+@import "footer.css";
+
 body {
   margin: 0;
   font-family: "Rubik", sans-serif;

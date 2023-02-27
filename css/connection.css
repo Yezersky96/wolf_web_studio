@@ -1,8 +1,9 @@
 .block-contacts {
     display: flex;
     justify-content: space-between;
+    padding-bottom: 100px;
 }
-.connection .title {
+.title-connection {
     font-style: normal;
     font-weight: 700;
     font-size: 40px;
@@ -29,5 +30,5 @@
     line-height: 145%;
     letter-spacing: 0.02em;
     color: #231F20;
-    margin-bottom: 100px;
+    padding-bottom: 100px;
 }
