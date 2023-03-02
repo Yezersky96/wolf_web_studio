@@ -32,3 +32,67 @@
     color: #231F20;
     padding-bottom: 100px;
 }
+
+@media screen and (max-width: 1200px) {
+
+}
+@media screen and (max-width: 992px) {
+    .title-connection {
+        margin-top: 80px;
+        margin-bottom: 30px;
+        padding: 0;
+    }
+    .block-contacts {
+        flex-wrap: wrap;
+        padding-bottom: 80px;
+        justify-content: flex-start;
+    }
+    .mail {
+        width: 33%;
+    }
+    .phone {
+        width: 33%;
+    }
+    .messages {
+        width: 33%;
+    }
+    .telegram {
+        width: 33%;
+    }
+}
+@media screen and (max-width: 768px) {
+    .mail {
+        width: 50%;
+    }
+    .phone {
+        width: 50%;
+    }
+    .messages {
+        width: 50%;
+    }
+    .telegram {
+        width: 50%;
+    }
+}
+@media screen and (max-width: 576px) {
+    .title-connection {
+        margin-top: 50px;
+        margin-bottom: 20px;
+    }
+    .block-contacts {
+        padding-bottom: 50px;
+    }
+    .mail {
+        width: 100%;
+    }
+    .phone {
+        width: 100%;
+    }
+    .messages {
+        width: 100%;
+    }
+    .telegram {
+        width: 100%;
+    }
+}
+

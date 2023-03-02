@@ -5,3 +5,17 @@
     text-indent: 36px;
     width: 90%;
 }
+@media screen and (max-width: 1200px) {
+
+}
+@media screen and (max-width: 992px) {
+
+}
+@media screen and (max-width: 768px) {
+
+}
+@media screen and (max-width: 576px) {
+    .advantage .points-text {
+        width: 100%;
+    }
+}

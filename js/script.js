@@ -57,14 +57,23 @@ for(let i = 0; i < closePopUp.length; i++){
     });
 };
 
-let navToggle = document.querySelector(".nav-toggle");
-let navMain = document.querySelector(".nav-main");
-let header = document.getElementById("page-header")
-navToggle.addEventListener("click", function () {
-    navToggle.classList.toggle("active");
-    navMain.classList.toggle("active");
-    header.classList.toggle("open");
-});
+const navToggle = document.querySelector('.nav-toggle');
+const navToggleClose = document.querySelector('.nav-toggle-close');
+const navMain = document.querySelector('.nav-main');
+
+function toggleNav() {
+    navToggle.classList.toggle('active');
+    navMain.classList.toggle('active');
+}
+
+function closeNav() {
+    navToggle.classList.remove('active');
+    navMain.classList.remove('active');
+}
+
+navToggle.addEventListener('click', toggleNav);
+navToggleClose.addEventListener('click', closeNav);
+
 
 // Показать или скрыть стрелку в зависимости от прокрутки страницы
 window.addEventListener('scroll', function() {
@@ -81,6 +90,8 @@ var backToTopButton = document.querySelector('.back-to-top');
 backToTopButton.addEventListener('click', function() {
     window.scrollTo({top: 0, behavior: 'smooth'});
 });
+
+
 
 
 
