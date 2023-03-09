@@ -169,10 +169,14 @@ input {
   transform: translateZ(0);
   box-shadow: 0 0 1px #ffb234;
   margin-bottom: 128px;
+  cursor: pointer;
 }
 .btn:hover {
-  background: #ffbc4e;
+  background: #FDDF75;
+  box-shadow: 0 0 20px #FF9E00;
+  border-radius: 5px;
 }
+
 .descriptor button.btn:before {
   pointer-events: none;
   position: absolute;

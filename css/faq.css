@@ -1,3 +1,4 @@
+
 .faq .container {
     background: #000000;
     border-radius: 20px;
@@ -32,16 +33,17 @@
     line-height: 30px;
     letter-spacing: 0.02em;
     color: #F8F8F8;
+    cursor: pointer;
 }
 .faq-toggle-button {
     float: right;
-    margin-top: 50px;
+    margin-top: 45px;
     transform: translateY(-50%);
     background-color: transparent;
     border: none;
     cursor: pointer;
     position: absolute;
-    right: -10px;
+    right: 10px;
 }
 .faq-toggle-button-icon {
     display: block;
@@ -78,10 +80,14 @@
     width: 90%;
 }
 @media screen and (max-width: 1200px) {
-
+    .faq-section .title {
+        margin: 30px 5px;
+    }
 }
 @media screen and (max-width: 992px) {
-
+    .faq-section .title {
+        margin: 30px 10px;
+    }
 }
 @media screen and (max-width: 768px) {
 
@@ -97,7 +103,7 @@
     .faq-section .title {
         font-size: 16px;
         line-height: 19px;
-        margin: 10px 10px;
+        margin: 15px 30px;
     }
     .faq-block {
         margin: 0;

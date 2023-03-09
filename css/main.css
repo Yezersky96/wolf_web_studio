@@ -13,20 +13,29 @@ body {
 * {
   box-sizing: border-box;
 }
+
 .container {
   max-width: 1400px;
   margin: 0 auto;
   padding: 0 15px;
 }
+  /*header.main {*/
+  /*  position: sticky;*/
+  /*  top: 0;*/
+  /*  background: #fff;*/
+  /*  z-index: 25;*/
+  /*  box-shadow: 0 0 3px 0 rgb(0 0 0 / 50%);*/
+  /*}*/
 .logo {
-  margin-bottom: 40px;
+  margin-bottom: 25px;
+  margin-top: 25px;
 }
 .main .container {
   align-items: center;
 }
 nav.nav-main {
   display: flex;
-  justify-content: flex-end;
+  justify-content: right;
   text-decoration: none;
   margin: 32px 17px;
   border-bottom: 2px solid transparent;
@@ -43,14 +52,11 @@ nav.nav-main a {
   text-decoration: none;
   margin: 15px 30px;
   border-bottom: 2px solid transparent;
-  transition: 1s;
+  transition: 300ms;
   text-align: center;
 }
 nav.nav-main a:hover {
-  transform: scale(1.2);
-}
-nav.nav-main a:hover {
-  border-bottom: 3px solid black;
+  border-bottom: 2px solid black;
 }
 .nav-toggle {
   display: none;
@@ -74,6 +80,10 @@ nav.nav-main a:hover {
 @media screen and (max-width: 992px) {
   .logo-main {
     display: block;
+  }
+  .logo {
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
   .contacts-info {
     display: contents;
@@ -113,7 +123,10 @@ nav.nav-main a:hover {
     margin: 0;
   }
   .dropdown {
-    display: none;
+    display: inline;
+    position: absolute;
+    right: 100px;
+    top: 50px;
   }
 
   .nav-toggle {
@@ -121,7 +134,7 @@ nav.nav-main a:hover {
     width: 30px;
     height: 25px;
     position: absolute;
-    top: 23px;
+    top: 45px;
     right: 30px;
     z-index: 2;
     overflow: hidden;
@@ -130,11 +143,11 @@ nav.nav-main a:hover {
   }
 
   .nav-toggle span:nth-of-type(2) {
-    top: calc(50% - 6px);
+    top: calc(50% - 8px);
   }
 
   .nav-toggle span:nth-of-type(3) {
-    top: calc(50% + 6px);
+    top: calc(50% + 8px);
   }
 
   .nav-toggle.active span:nth-of-type(1) {
@@ -153,7 +166,7 @@ nav.nav-main a:hover {
 
   .nav-toggle-close {
     position: absolute;
-    top: 25px;
+    top: 35px;
     right: 25px;
     color: #ffffff;
     font-size: 20px;
@@ -217,6 +230,9 @@ nav.nav-main a:hover {
   }
   .boys-img {
     width: 100%;
+  }
+  .dropdown {
+    display: none;
   }
 }
 @media screen and (max-width: 576px) {
