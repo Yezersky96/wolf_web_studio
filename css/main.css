@@ -19,13 +19,13 @@ body {
   margin: 0 auto;
   padding: 0 15px;
 }
-  /*header.main {*/
-  /*  position: sticky;*/
-  /*  top: 0;*/
-  /*  background: #fff;*/
-  /*  z-index: 25;*/
-  /*  box-shadow: 0 0 3px 0 rgb(0 0 0 / 50%);*/
-  /*}*/
+  header.main {
+    position: sticky;
+    top: 0;
+    background: #fff;
+    z-index: 25;
+    box-shadow: 0 0 3px 0 rgb(0 0 0 / 50%);
+  }
 .logo {
   margin-bottom: 25px;
   margin-top: 25px;

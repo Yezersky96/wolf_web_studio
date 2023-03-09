@@ -221,17 +221,17 @@ document.addEventListener('click', (event) => {
 });
 // Конец кода для меню services
 // Скрол меню
-// document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-//     anchor.addEventListener('click', function (e) {
-//         e.preventDefault();
-//
-//         const target = document.querySelector(this.getAttribute('href'));
-//         const headerHeight = document.querySelector('header').offsetHeight; // здесь можно использовать высоту любого другого элемента, который находится над якорной ссылкой
-//
-//         window.scrollTo({
-//             top: target.offsetTop - headerHeight,
-//             behavior: 'smooth'
-//         });
-//     });
-// });
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        const target = document.querySelector(this.getAttribute('href'));
+        const headerHeight = document.querySelector('header').offsetHeight; // здесь можно использовать высоту любого другого элемента, который находится над якорной ссылкой
+
+        window.scrollTo({
+            top: target.offsetTop - headerHeight,
+            behavior: 'smooth'
+        });
+    });
+});
 // Конец кода скрол меню
