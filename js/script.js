@@ -1,89 +1,3 @@
-// const toggleButtons = document.querySelectorAll(".faq-toggle-button");
-// toggleButtons.forEach(button => {
-//     button.addEventListener("click", () => {
-//         button.classList.toggle("open");
-//     });
-// });
-//
-//
-// var modal = document.querySelector(".modal");
-// var closeBtn = document.querySelector(".close");
-// var modalHeading = document.querySelector("#modal-heading");
-// var modalText = document.querySelector("#modal-text");
-//
-// // Обработчик события клика по ссылке
-// document.querySelectorAll(".nav-services-link").forEach(function(link) {
-//     link.addEventListener("click", function(event) {
-//         event.preventDefault();
-//
-//         // Получаем данные для модального окна
-//         var title = this.getAttribute("data-title");
-//         var text = this.getAttribute("data-text");
-//
-//         // Заполняем модальное окно данными
-//         modalHeading.innerHTML = title;
-//         modalText.innerHTML = text;
-//
-//         // Открываем модальное окно
-//         modal.style.display = "block";
-//     });
-// });
-//
-// // Обработчик события клика по кнопке закрытия модального окна
-// closeBtn.addEventListener("click", function() {
-//     modal.style.display = "none";
-// });
-//
-// // Обработчик события клика по области вокруг модального окна
-// window.addEventListener("click", function(event) {
-//     if (event.target == modal) {
-//         modal.style.display = "none";
-//     }
-// });
-// /* кнопка 8 */
-// let openPopUp = document.querySelectorAll('.btn ');
-// let closePopUp = document.querySelectorAll('.pop_up_close');
-// let popUp = document.querySelectorAll('.pop_up');
-// for(let i = 0; i < openPopUp.length; i++){
-//     openPopUp[i].addEventListener("click", function(event) {
-//         event.preventDefault();
-//         popUp[0].classList.add('active');
-//     });
-// };
-// for(let i = 0; i < closePopUp.length; i++){
-//     closePopUp[i].addEventListener("click", function(event) {
-//         event.preventDefault();
-//         popUp[0].classList.remove('active');
-//     });
-// };
-//
-// let navToggle = document.querySelector(".nav-toggle");
-// let navMain = document.querySelector(".nav-main");
-// let header = document.getElementById("page-header")
-// navToggle.addEventListener("click", function () {
-//     navToggle.classList.toggle("active");
-//     navMain.classList.toggle("active");
-//     header.classList.toggle("open");
-// });
-//
-// // Показать или скрыть стрелку в зависимости от прокрутки страницы
-// window.addEventListener('scroll', function() {
-//     var backToTopButton = document.querySelector('.back-to-top');
-//     if (window.pageYOffset > 200) {
-//         backToTopButton.style.display = "block";
-//     } else {
-//         backToTopButton.style.display = "none";
-//     }
-// });
-//
-// // Перемещение страницы вверх при нажатии на стрелку
-// var backToTopButton = document.querySelector('.back-to-top');
-// backToTopButton.addEventListener('click', function() {
-//     window.scrollTo({top: 0, behavior: 'smooth'});
-// });
-//
-
-
 // Кнопка btn
 let openPopUp = document.querySelectorAll('.btn ');
 let closePopUp = document.querySelectorAll('.pop_up_close');
@@ -103,23 +17,16 @@ for(let i = 0; i < closePopUp.length; i++){
 // конец кода для кнопки btn
 
 // Код для открытия меню
-// Получаем элементы для работы с меню и кнопкой открытия
 const navMain = document.querySelector('.nav-main');
 const navToggle = document.querySelector('.nav-toggle');
-// Добавляем обработчик события клика на кнопку открытия меню
 navToggle.addEventListener('click', function() {
-    // Добавляем/удаляем класс 'active' для открытия/закрытия меню
     navMain.classList.toggle('active');
 });
-// Добавляем обработчик события клика на кнопку закрытия меню
 document.querySelector('.nav-toggle-close').addEventListener('click', function() {
-    // Удаляем класс 'active' для закрытия меню
     navMain.classList.remove('active');
 });
-// Добавляем обработчик события клика на ссылки меню для их закрытия
 document.querySelectorAll('.nav-main a').forEach(function(item) {
     item.addEventListener('click', function() {
-        // Удаляем класс 'active' для закрытия меню
         navMain.classList.remove('active');
     });
 });
@@ -152,52 +59,37 @@ titles.forEach(title => {
 
 // Код для всплывающего окна при клике на вопросительный знак
 const questionMarks = document.querySelectorAll('.question-mark');
+const popups = document.querySelectorAll('.popup');
+const popupHeaders = document.querySelectorAll('.popup-header');
+const popupTexts = document.querySelectorAll('.popup-text');
+const popupCloses = document.querySelectorAll('.popup-close');
 
-// Обработчик клика на каждый вопросительный знак
-questionMarks.forEach((questionMark) => {
+questionMarks.forEach((questionMark, index) => {
     questionMark.addEventListener('click', () => {
-        // Получаем текст для отображения из атрибута data-text
         const text = questionMark.getAttribute('data-text');
-
-        // Получаем заголовок для отображения из атрибута data-header или использовать значение по умолчанию
         const header = questionMark.getAttribute('data-header') || 'Информация';
-
-        // Получаем элементы всплывающего окна
-        const popup = document.querySelector('.popup');
-        const popupHeader = document.querySelector('.popup-header');
-        const popupText = document.querySelector('.popup-text');
-
-        // Устанавливаем заголовок и текст всплывающего окна
-        popupHeader.textContent = header;
-        popupText.textContent = text;
-
-        // Отображаем всплывающее окно
-        popup.style.display = 'block';
+        popupHeaders[index].textContent = header;
+        popupTexts[index].textContent = text;
+        popups[index].style.display = 'block';
     });
 });
 
-// Обработчик клика на кнопку закрытия всплывающего окна
-const popupClose = document.querySelector('.popup-close');
-popupClose.addEventListener('click', () => {
-    const popup = document.querySelector('.popup');
-    popup.style.display = 'none';
+popupCloses.forEach((popupClose, index) => {
+    popupClose.addEventListener('click', () => {
+        popups[index].style.display = 'none';
+    });
 });
+
 // Конец кода на всплывающее окно при клике на вопросительный знак
 
 // Services меню смена блоков при клике
-// получаем ссылки и блоки
 const links = document.querySelectorAll('.nav-services-link');
 const blocks = document.querySelectorAll('.block-site');
-
-// показываем первый блок по умолчанию
 blocks[0].style.display = 'flex';
-
-// добавляем обработчик клика на каждую ссылку
 links.forEach((link) => {
     link.addEventListener('click', (event) => {
-        event.preventDefault(); // предотвращаем переход по ссылке
-        const targetId = event.target.id.replace('-link', ''); // получаем ID целевого блока
-        // скрываем все блоки, кроме целевого
+        event.preventDefault();
+        const targetId = event.target.id.replace('-link', '');
         blocks.forEach((block) => {
             if (block.id === targetId) {
                 block.style.display = 'flex';
@@ -211,23 +103,24 @@ links.forEach((link) => {
 // добавляем обработчик на клик вне блоков
 document.addEventListener('click', (event) => {
     if (!event.target.classList.contains('nav-services-link') && !event.target.closest('.block-site')) {
-        // скрываем все блоки
         blocks.forEach((block) => {
             block.style.display = 'none';
         });
-        // показываем первый блок по умолчанию
         blocks[0].style.display = 'flex';
     }
 });
 // Конец кода для меню services
 // Скрол меню
+window.addEventListener('scroll', function() {
+    var header = document.querySelector('header.main');
+    header.classList.toggle('scrolling-active', window.scrollY > 0);
+});
+
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
-
         const target = document.querySelector(this.getAttribute('href'));
-        const headerHeight = document.querySelector('header').offsetHeight; // здесь можно использовать высоту любого другого элемента, который находится над якорной ссылкой
-
+        const headerHeight = document.querySelector('header').offsetHeight;
         window.scrollTo({
             top: target.offsetTop - headerHeight,
             behavior: 'smooth'
@@ -235,3 +128,19 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 // Конец кода скрол меню
+// Показать или скрыть стрелку в зависимости от прокрутки страницы
+window.addEventListener('scroll', function() {
+    var backToTopButton = document.querySelector('.back-to-top');
+    if (window.pageYOffset > 200) {
+        backToTopButton.style.display = "block";
+    } else {
+        backToTopButton.style.display = "none";
+    }
+});
+
+// Перемещение страницы вверх при нажатии на стрелку
+var backToTopButton = document.querySelector('.back-to-top');
+backToTopButton.addEventListener('click', function() {
+    window.scrollTo({top: 0, behavior: 'smooth'});
+});
+// Конец кода скрола стрелочки ввверх

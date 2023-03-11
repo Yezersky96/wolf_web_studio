@@ -24,12 +24,6 @@
     display: grid;
     margin-right: 160px;
 }
-.block-contact  {
-    /*width: 20%;*/
-}
-.block-services {
-    /*width: 30%;*/
-}
 .block-title {
     margin-top: 0;
     margin-bottom: 5px;
@@ -70,10 +64,13 @@
     padding-bottom: 0;
     text-decoration: none;
 }
+.message-footer:hover {
+    color: #ffbc4e;
+}
 .back-to-top {
     position: fixed;
     bottom: 20px;
-    right: 20px;
+    right: 30px;
     display: none;
     width: 50px;
     height: 50px;
@@ -144,6 +141,9 @@
     }
     .message-footer {
         font-size: 16px;
+    }
+    .back-to-top {
+        bottom: 10px;
     }
 }
 @media screen and (max-width: 576px) {

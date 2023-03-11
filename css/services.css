@@ -12,11 +12,11 @@
 
 .popup-content {
   position: relative;
-  margin: 100px auto;
+  margin: 80px auto;
   padding: 40px;
-  background-color: #000000;
-  width: 70%;
-  height: 70%;
+  background-color: #131313;
+  width: 82%;
+  height: 85%;
   overflow: auto;
 }
 
@@ -41,11 +41,17 @@
 
 .popup-close {
   position: absolute;
-  top: 10px;
-  right: 10px;
+  top: 15px;
+  right: 15px;
   font-size: 24px;
   font-weight: bold;
   cursor: pointer;
+  color: white;
+  background: #131313;
+  border: none;
+}
+.popup-close:hover {
+  color: #ffbc4e;
 }
 
 .question-mark {
@@ -121,6 +127,10 @@ nav.nav-services a:hover {
   background: #fcbf4c;
   border-radius: 10px;
 }
+nav.nav-services a:focus {
+  background: #fcbf4c;
+  border-radius: 10px;
+}
 .nav-services {
   display: flex;
 }
@@ -155,7 +165,8 @@ nav.nav-services a:hover {
   font-size: 18px;
   line-height: 21px;
   color: #f8f8f8;
-  text-align: right
+  text-align: right;
+  padding: 0 40px;
 }
 .price-title {
   font-style: normal;
@@ -338,7 +349,6 @@ nav.nav-services a:hover {
   color: #F8F8F8;
   margin-bottom: 106px;
 }
-/* Скрываю модальное окно по умолчанию */
 .modal {
   display: none;
   position: fixed;
@@ -350,8 +360,6 @@ nav.nav-services a:hover {
   overflow: auto;
   background-color: rgba(0,0,0,0.4);
 }
-
-/* Стилизация контент модального окна */
 .modal-content {
   background: #131313;
   margin: 15% auto;
@@ -360,7 +368,6 @@ nav.nav-services a:hover {
   width: 80%;
   border-radius: 30px;
 }
-/* Стилизация крестик для закрытия окна */
 .close {
   color: #aaa;
   float: right;
@@ -373,8 +380,6 @@ nav.nav-services a:hover {
   text-decoration: none;
   cursor: pointer;
 }
-
-
 #overlay {
   position: fixed;
   top: 0;
@@ -397,11 +402,9 @@ nav.nav-services a:hover {
   z-index: 1000;
   display: none;
 }
-
 #modal-content {
   padding: 20px;
 }
-
 #close-modal {
   display: block;
   margin-top: 20px;
@@ -413,6 +416,7 @@ nav.nav-services a:hover {
   .title-price {
     margin-top: auto;
     margin-left: auto;
+    padding: 0 20px;
   }
   .text-block {
     height: auto;

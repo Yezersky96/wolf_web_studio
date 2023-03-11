@@ -32,6 +32,9 @@
     color: #231F20;
     padding-bottom: 100px;
 }
+.message:hover {
+    color: #ffbc4e;
+}
 
 @media screen and (max-width: 1200px) {
 

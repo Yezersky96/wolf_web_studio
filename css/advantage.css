@@ -1,9 +1,22 @@
 .advantage .title {
     margin-top: 100px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 47px;
+    letter-spacing: 0.02em;
+    color: #231F20;
 }
 .advantage .points-text {
     text-indent: 36px;
     width: 90%;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 145%;
+    letter-spacing: 0.02em;
+    color: #231F20;
+
 }
 @media screen and (max-width: 1200px) {
 
@@ -18,4 +31,9 @@
     .advantage .points-text {
         width: 100%;
     }
+    .advantage .title {
+        font-size: 32px;
+        margin-top: 50px;
+    }
+
 }

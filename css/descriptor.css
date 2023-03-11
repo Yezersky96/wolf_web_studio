@@ -5,7 +5,7 @@
   left: 0;
   top: 0;
   background-color: transparent;
-  z-index: 2;
+  z-index: 25;
   transform: translateY(-44.5%) scale(0);
   transition: .4s ease-in-out;
 }
@@ -173,7 +173,7 @@ input {
 }
 .btn:hover {
   background: #FDDF75;
-  box-shadow: 0 0 20px #FF9E00;
+  box-shadow: 0 0 20px #FDDF75;;
   border-radius: 5px;
 }
 
