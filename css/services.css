@@ -606,6 +606,9 @@ nav.nav-services a:focus {
   .popup-content {
     width: 100%;
   }
+  .popup-close {
+    right: 0;
+  }
   .pop_up_body_button {
     width: 100%;
   }
