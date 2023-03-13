@@ -170,3 +170,12 @@ window.onload = function() {
     });
 }
 //Конец кода отправки почты
+// Скролл при клике на логотип
+const logos = document.querySelectorAll('.logo');
+logos.forEach((logo) => {
+    logo.addEventListener('click', (event) => {
+        event.preventDefault();
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+});
+//Конец кода скролла при клике на логотип
