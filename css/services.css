@@ -12,11 +12,11 @@
 
 .popup-content {
   position: relative;
-  margin: 80px auto;
+  margin: 100px auto;
   padding: 40px;
   background-color: #131313;
-  width: 82%;
-  height: 85%;
+  width: 70%;
+  height: auto;
   overflow: auto;
 }
 
@@ -564,7 +564,6 @@ nav.nav-services a:focus {
     padding: 15px 15px;
     width: 100%;
     align-items: center;
-    justify-content: center;
   }
   nav.nav-services {
     background: none;

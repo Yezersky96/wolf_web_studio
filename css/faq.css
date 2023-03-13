@@ -115,4 +115,15 @@
     .faq-section {
         padding: 20px 0 10px 0;
     }
+    .faq .title-text {
+        font-size: 24px;
+        padding: 0 15px;
+    }
+    .faq-toggle-button.open ~ .text {
+        width: 100%;
+        padding: 0 15px;
+    }
+    .faq .text {
+        font-size: 16px;
+    }
 }

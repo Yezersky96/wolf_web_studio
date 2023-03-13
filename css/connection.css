@@ -30,7 +30,7 @@
     line-height: 145%;
     letter-spacing: 0.02em;
     color: #231F20;
-    padding-bottom: 100px;
+    margin-bottom: 100px;
 }
 .message:hover {
     color: #ffbc4e;

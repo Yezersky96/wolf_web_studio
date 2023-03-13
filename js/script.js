@@ -7,7 +7,7 @@ for(let i = 0; i < openPopUp.length; i++){
         event.preventDefault();
         popUp[0].classList.add('active');
     });
-};
+}
 for(let i = 0; i < closePopUp.length; i++){
     closePopUp[i].addEventListener("click", function(event) {
         event.preventDefault();
@@ -130,7 +130,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 // Конец кода скрол меню
 // Показать или скрыть стрелку в зависимости от прокрутки страницы
 window.addEventListener('scroll', function() {
-    var backToTopButton = document.querySelector('.back-to-top');
+    const backToTopButton = document.querySelector('.back-to-top');
     if (window.pageYOffset > 200) {
         backToTopButton.style.display = "block";
     } else {
@@ -139,7 +139,7 @@ window.addEventListener('scroll', function() {
 });
 
 // Перемещение страницы вверх при нажатии на стрелку
-var backToTopButton = document.querySelector('.back-to-top');
+const backToTopButton = document.querySelector('.back-to-top');
 backToTopButton.addEventListener('click', function() {
     window.scrollTo({top: 0, behavior: 'smooth'});
 });
