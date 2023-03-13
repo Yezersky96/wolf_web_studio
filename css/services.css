@@ -446,6 +446,11 @@ nav.nav-services a:focus {
   .black1 {
     margin-bottom: 0;
   }
+  .popup-content {
+    height: -webkit-fill-available;
+    margin: 20px auto;
+    overflow: auto;
+  }
 }
 @media screen and (max-width: 992px) {
   .services .title {
@@ -591,6 +596,15 @@ nav.nav-services a:focus {
   }
   .site-services-two {
     width: 100%;
+  }
+  .popup-content {
+    width: 100%;
+  }
+  .pop_up_body_button {
+    width: 100%;
+  }
+  .popup-content {
+    margin: 0 auto;
   }
 }
 @media screen and (max-width: 350px) {

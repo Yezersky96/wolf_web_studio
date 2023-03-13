@@ -144,3 +144,29 @@ backToTopButton.addEventListener('click', function() {
     window.scrollTo({top: 0, behavior: 'smooth'});
 });
 // Конец кода скрола стрелочки ввверх
+//Код для отправки почты
+emailjs.init('9c-wLbqqkzjPo5xm3');
+
+const popupTitle = document.getElementById('popup-title');
+const popupForm = document.getElementById('popup-form');
+const popupSuccess = document.getElementById('form-success');
+const popupError = document.getElementById('form-error');
+
+window.onload = function() {
+    popupForm.addEventListener('submit', function(event) {
+        event.preventDefault();
+        emailjs.sendForm('contact_service', 'contact_form', this)
+            .then(function() {
+                popupSuccess.style.display = 'block';
+                popupSuccess.style.color = 'orange';
+                popupTitle.style.display = 'none';
+                popupError.style.display = 'none';
+                popupForm.style.display = 'none';
+                console.log('SUCCESS!');
+            }, function(error) {
+                popupError.style.display = 'block';
+                console.log('FAILED...', error);
+            });
+    });
+}
+//Конец кода отправки почты

@@ -9,6 +9,9 @@
   transform: translateY(-44.5%) scale(0);
   transition: .4s ease-in-out;
 }
+.pop_up_body p .success {
+  color: orange;
+}
 .pop_up.active {
   transform: translateY(0%) scale(100%);
   background-color: rgba(0,0,0,.8);;
@@ -97,6 +100,17 @@ input {
 }
 .input-two {
   padding: 20px 20px 80px 20px;
+  display: block;
+  margin: 25px auto 0 auto;
+  width: 50%;
+  background-color: #e5e5e5;
+  border-radius: 10px;
+  border: 0;
+  font-family: Montserrat,sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  color: #89909f;
+  outline: 0;
 }
 .descriptor .container {
   background: #000000;
@@ -173,6 +187,7 @@ input {
   box-shadow: 0 0 1px #ffb234;
   margin-bottom: 128px;
   cursor: pointer;
+  border: none;
 }
 .btn:hover {
   background: #FDDF75;
@@ -218,7 +233,10 @@ input {
 }
 
 @media screen and (max-width: 1200px) {
-
+  .pop_up_body {
+  overflow: auto;
+  height: inherit;
+  }
 }
 @media screen and (max-width: 992px) {
   .main-information {
@@ -251,7 +269,12 @@ input {
 
 }
 @media screen and (max-width: 576px) {
-
+  input {
+    width: 100%;
+  }
+  .input-two {
+    width: 100%;
+  }
 }
 
 
