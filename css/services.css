@@ -562,7 +562,13 @@ nav.nav-services a:focus {
 }
 @media screen and (max-width: 576px) {
   .services .title {
-    margin-top: 50px;
+    padding-top: 50px;
+  }
+  .title-block {
+    margin-top: 30px;
+  }
+  .text-block {
+    margin-bottom: 30px;
   }
   nav.nav-services a {
     display: flex;

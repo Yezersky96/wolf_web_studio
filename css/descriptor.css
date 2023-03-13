@@ -9,9 +9,6 @@
   transform: translateY(-44.5%) scale(0);
   transition: .4s ease-in-out;
 }
-.pop_up_body p .success {
-  color: orange;
-}
 .pop_up.active {
   transform: translateY(0%) scale(100%);
   background-color: rgba(0,0,0,.8);;
@@ -269,11 +266,27 @@ input {
 
 }
 @media screen and (max-width: 576px) {
+  .descriptor .title {
+    margin-top: 20px;
+  }
   input {
     width: 100%;
+    margin: 15px auto 0 auto;
+    padding: 15px 20px;
   }
   .input-two {
     width: 100%;
+    padding: 15px 20px 60px 20px;
+    margin: 15px auto 0 auto;
+  }
+  .pop_up_body_button {
+    margin: 20px auto 0 auto;
+  }
+  .pop_up_body {
+    padding: 50px 15px;
+  }
+  .nav-toggle {
+    top: 40px;
   }
 }
 
