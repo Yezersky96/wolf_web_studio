@@ -231,7 +231,7 @@ input {
 
 @media screen and (max-width: 1200px) {
   .pop_up_body {
-  overflow: auto;
+  overflow: scroll;
   height: inherit;
   }
 }
