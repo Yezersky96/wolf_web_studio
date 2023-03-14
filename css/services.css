@@ -620,5 +620,11 @@ nav.nav-services a:focus {
   nav.nav-services a {
     display: -webkit-box;
   }
+  .popup-header {
+    font-size: 28px;
+  }
+  .popup-text {
+    font-size: 15px;
+  }
 }
 
