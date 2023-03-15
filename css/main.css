@@ -99,6 +99,10 @@ nav.nav-main a:hover {
   .logo-main {
     display: block;
   }
+  .language {
+    width: 2%;
+    margin-left: 20px;
+  }
   .logo {
     margin-top: 20px;
     margin-bottom: 20px;

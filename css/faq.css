@@ -22,8 +22,8 @@
     position: relative;
     padding: 20px 20px 20px 0;
     color: white;
-    border-bottom: 2px solid #404040;
-    border-top: 2px solid #404040;
+    border-bottom: 1px solid #404040;
+    border-top: 1px solid #404040;
 }
 .faq-section .title {
     display: inline-block;

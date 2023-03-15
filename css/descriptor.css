@@ -115,6 +115,7 @@ input {
   background-size: cover;
   width: 100%;
   padding-top: 35px;
+  overflow: hidden;
 }
 .descriptor .title {
   font-style: normal;
@@ -155,7 +156,6 @@ input {
 }
 .form {
   position: absolute;
-  top: 22px;
   right: 0;
   bottom: 0;
   z-index: 1;
