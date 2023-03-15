@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,500;0,700;1,400;1,600&display=swap" rel="stylesheet">    <link rel="shortcut icon" href="" type="" />
+  <link type="#" href="../img/logo1.png" rel="shortcut icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" type="text/css" href="../css/main.css">
+  <title>Web Studio</title>
+</head>
+<body>
+<header class="main" id="page-header">
+  <div class="container" style="display: flex">
+    <a href="#" class="logo">
+      <img src="../img/logo1.svg" alt="Помидоров">
+    </a>
+    <button class="nav-toggle">
+      <span class="span"></span>
+      <span class="span-one"></span>
+      <span class="span"></span>
+    </button>
+    <nav class="nav-main" style="flex-grow: 1">
+      <a href="#" class="logo-main">
+        <img src="../img/wolflogo.png" alt="Помидоров">
+      </a>
+      <a href="#summary">About Us</a>
+      <a href="#services">Services</a>
+      <!--                <a href="#">Портфолио</a>-->
+      <a href="#connection">Contact</a>
+      <div class="contacts-info">
+        <a class="text-footer" href="#block-site-1-link">Single-page websites</a>
+        <a class="text-footer" href="#block-site-2-link">Corporate websites</a>
+        <a class="text-footer" href="#block-site-3-link">E-commerce websites</a>
+        <a class="text-footer" href="#block-site-4-link">Additional services</a>
+      </div>
+      <div class="block-info">
+        <h3 class="info-title">Email:</h3>
+        <a class="message-info" href="mailto:yezersky96@gmail.com">yezersky96@gmail.com</a>
+        <h3 class="info-title">Phone:</h3>
+        <a class="message-info" href="tel:380635777473">+38(063)-577-74-73</a>
+      </div>
+      <button class="nav-toggle-close">x</button>
+    </nav>
+    <a class="language" href="../index.html">UA</a>
+    <a class="language" href="#">EN</a>
+    <a class="language" href="../ru/rus.html">RU</a>
+    <div class="dropdown">
+      <a class="tel" href="tel:380635777473">+38(063)-577-74-73 </a>
+    </div>
+  </div>
+</header>
+<section class="descriptor">
+  <div class="container">
+    <div class="main-information">
+      <div class="content">
+        <h1 class="title">Full-cycle website development at the most favorable prices</h1>
+        <p class="text">"We brainstorm, launch, and develop profitable and sales-driven websites</p>
+        <button class="btn" type="submit">Free consultation</button>
+        <div class="pop_up" id="pop_up">
+          <div class="pop_up_container">
+            <div class="pop_up_body" id="pop_up_body">
+              <a href="#" class="logo_pop_up">
+                <img src="../img/logo1.svg" alt="Wolf">
+              </a>
+              <p id="popup-title">Leave a request</p>
+              <p class="success" id="form-success" style="display: none">Message successfully sent!<br> We will contact you shortly :)</p>
+              <p class="error" id="form-error" style="display: none">Error. Please fill in the required fields</p>
+              <form id="popup-form">
+                <label>
+                  <input type="text" placeholder="Name" name="name" required>
+                </label>
+                <label>
+                  <input type="text" placeholder="Phone" name="phone" required>
+                </label>
+                <label>
+                  <input type="text" placeholder="Email" name="email" required>
+                </label>
+                <label>
+                  <textarea class="input-two" placeholder="Message" name="message"></textarea>
+                </label>
+                <button type="submit" class="pop_up_body_button">Leave a request</button>
+              </form>
+              <div class="pop_up_close" id="pop_up_close">&#10006</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="form">
+        <img class="boys-img" src="../img/illustration.png" alt="">
+      </div>
+    </div>
+  </div>
+</section>
+<section class="summary" id="summary">
+  <div class="container">
+    <h2 class="title">About Us</h2>
+    <div class="list">
+      <div class="points">
+        <p class="points-text">Wolf web studio We specialize in developing websites oriented towards the digital transformation of brands" is one possible translation of</p>
+      </div>
+      <div class="points">
+        <p class="points-text">We help companies launch, develop, and gain a competitive advantage in the modern digital world through strategy and technology" is one possible translation of</p>
+      </div>
+      <div class="points">
+        <p class="points-text">Our mission - is to create websites that connect brands with their customers</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="services" id="services">
+  <div class="container">
+    <h2 class="title">Services</h2>
+    <nav class="nav-services" style="flex-grow: 1">
+      <div class="services-link">
+        <a href="#" class="nav-services-link" id="block-site-1-link">
+          One-page websites
+          <span class="question-mark" data-popup-index="0" data-header="One-page website" data-popup-target="#popup1" data-popup-id="popup1" onclick="event.preventDefault()">?</span>
+        </a>
+      </div>
+      <div class="services-link">
+        <a href="#" class="nav-services-link" id="block-site-2-link">
+          Corporate websites
+          <span class="question-mark" data-popup-index="1" data-header="Corporate website" data-popup-target="#popup2" data-popup-id="popup2" onclick="event.preventDefault()">?</span>
+        </a>
+      </div>
+      <div class="services-link">
+        <a href="#" class="nav-services-link" id="block-site-3-link">
+          Online store
+          <span class="question-mark" data-popup-index="2" data-header="Online store" data-popup-target="#popup3" data-popup-id="popup3" onclick="event.preventDefault()">?</span>
+        </a>
+      </div>
+      <div class="services-link">
+        <a href="#" class="nav-services-link" id="block-site-4-link">
+          Additional services
+          <span class="question-mark" data-popup-index="3" data-header="Additional services" data-popup-target="#popup4" data-popup-id="popup4" onclick="event.preventDefault()">?</span>
+        </a>
+      </div>
+    </nav>
+    <div class="popup" id="popup1">
+      <div class="popup-content">
+        <span class="popup-header"></span>
+        <p class="popup-text">A single-page website is a website designed to display all content on one page. This page usually contains all the information a user may need about the website, including information about the company, products, and services offered. It's a simple and effective way to create an online presence for your business or personal brand.</p>
+        <p class="popup-text">When is it best to use a one-page website?</p>
+        <p class="popup-text">1. For small businesses<br>If you have a small business with limited resources, a single-page website can be a great option. With a single-page website, you can quickly and easily establish an online presence for your business without the need to invest in a complex multi-page website. This makes it a cost-effective solution for companies that are just starting out.</p>
+        <p class="popup-text">2. For landing pages<br>One-page websites are also great for landing pages. A landing page is a page designed to encourage users to take specific actions, such as making a purchase or subscribing to a newsletter. By placing all the information on one page, you can make it easier for users to understand the value of your offer and take action.</p>
+        <p class="popup-text">3. For event websites: If you are organizing an event, a single-page website can be an excellent way to promote the event and provide all the necessary information in one place. On a single-page website, you can include all the details about the event, such as the date, location, and registration information.</p>
+        <p class="popup-text">4. For portfolio websites: One-page websites are also great for portfolio websites, where the main focus is on showcasing your work. With a one-page website, you can easily present your work in a visually appealing way, without overwhelming users with too much information.</p>
+        <button class="popup-close">x</button>
+      </div>
+    </div>
+    <div class="popup" id="popup2">
+      <div class="popup-content">
+        <span class="popup-header"></span>
+        <p class="popup-text">A multi-page website is a website that consists of several separate pages linked together by links, menus, or other navigation elements. Multi-page websites can be simple, consisting of only a few pages, or complex, with many pages and subpages.</p>
+        <p class="popup-text">Multi-page websites have several advantages over single-page ones. One of the most significant advantages is that they allow displaying more content, making it easier to organize and classify information. This is particularly important for businesses and organizations that have a lot of information they can share with their clients or visitors. A multi-page website also provides better search engine optimization (SEO) since search engines can index each page separately, making it easier for users to find what they are looking for.</p>
+        <p class="popup-text">Multi-page websites are best suited for websites that require a lot of content, such as e-commerce sites, news sites, or corporate sites. These websites usually contain a lot of information that can be shared with their users, and a multi-page website simplifies the organization and presentation of this information.</p>
+        <p class="popup-text">Multi-page websites are also ideal for websites with a clear hierarchy of information. For example, a company's website may have a homepage that provides an overview of the company's products and services. From there, users can click on links to individual product pages, which contain more detailed information. This hierarchical structure makes it easy for users to navigate the site and find the information they need.</p>
+        <button class="popup-close">x</button>
+      </div>
+    </div>
+    <div class="popup" id="popup3">
+      <div class="popup-content">
+        <span class="popup-header"></span>
+        <p class="popup-text">An e-commerce website is a website specifically designed for selling goods or services online. Typically, it includes features such as a shopping cart, order checkout system, and product pages. These websites are intended to provide customers with a convenient and efficient way to view and purchase products without leaving their own home.</p>
+        <p class="popup-text">One of the main advantages of having a website for an online store is that it can significantly expand the reach of the business. With an online store, businesses can sell products to customers in different geographical locations and even abroad. This means that businesses can attract more customers, which can lead to increased sales and revenue.</p>
+        <p class="popup-text">Online stores are suitable for businesses that have products or services to sell, whether physical or digital. Online stores are particularly ideal for businesses with a large number of products, as it is much easier to organize and manage them in an online store. Additionally, companies with unique or niche products can benefit greatly from an online store, as they can attract customers who may not have access to these products in traditional brick-and-mortar stores.</p>
+        <p class="popup-text">Internet shops are also a good option for businesses that want to expand their reach and attract new customers. By having an online store, companies can attract customers beyond their region and even on an international level. This can be particularly useful for small businesses that want to expand their customer base but may not have the resources to open additional physical offices.</p>
+        <button class="popup-close">x</button>
+      </div>
+    </div>
+    <div class="popup" id="popup4">
+      <div class="popup-content">
+        <span class="popup-header"></span>
+        <p class="popup-text">In today's digital age, having a website is essential for the success of any business. However, simply having a website is not enough. Your website must be well-designed, optimized for search engines, and regularly maintained to continue providing a positive user experience. Here are some additional services we can offer you to help you achieve your online goals:</p>
+        <p class="popup-text">1. Website design. Website design plays an important role in how users perceive a business. A well-designed website is not only visually appealing, but also easy to navigate and user-friendly. Therefore, we can help create a website that accurately represents your brand and attracts your target audience.</p>
+        <p class="popup-text">2. SEO audit: search engine optimization is an important part of any digital marketing strategy. An SEO audit helps to identify areas of a website that can be improved to increase their visibility on search engine results pages. A website SEO audit can help improve the website's ranking on search engines like Google, which can lead to increased traffic to the website.</p>
+        <p class="popup-text">3. Website Maintenance: Regular website maintenance is crucial to ensure that the website continues to function properly. This includes updating software, fixing broken links, and ensuring website security. Website maintenance helps to avoid potential issues and ensure that the website remains in good working condition.</p>
+        <button class="popup-close">x</button>
+      </div>
+    </div>
+    <div class="block-site" id="block-site-1">
+      <div class="site-services">
+        <h3 class="title-block">Template website</h3>
+        <p class="text-block">We will assemble a website based on ready-made typical projects. This is a great option for a quick start.</p>
+        <p class="title-price">from 16 000 UAH</p>
+        <div class="services-images">
+          <img class="vector3" src="../img/Vector3.png" alt="">
+          <img class="vector2" src="../img/Vector2.png" alt="">
+        </div>
+      </div>
+      <div class="site-services">
+        <h3 class="title-block">With your design</h3>
+        <p class="text-block">We will develop a website based on your design. It's perfect for small businesses that already have a design and only need website development.</p>
+        <p class="title-price">from 16 000 UAHн</p>
+        <div class="services-images">
+          <img class="vector4" src="../img/Vector4.png" alt="">
+          <img class="vector5" src="../img/Vector5.png" alt="">
+        </div>
+      </div>
+      <div class="site-services">
+        <h3 class="title-block">With a unique design</h3>
+        <p class="text-block">We will create a design and develop a website tailored to your needs that will set you apart from your competitors.</p>
+        <p class="title-price">from 16 000 UAH</p>
+        <div class="services-images">
+          <img class="vector6" src="../img/Vector6.png" alt="">
+          <img class="vector7" src="../img/Vector7.png" alt="">
+        </div>
+      </div>
+      <div class="site-block">
+        <div class="site-img">
+          <img class="girl-img" src="../img/girl.png" alt="">
+          <img class="vector8" src="../img/Vector8.png" alt="">
+        </div>
+        <div class="services-site">
+          <h3 class="title-block">A turnkey website</h3>
+          <p class="text-block">We will provide a full-cycle website development, from idea to final result. We will conduct competitor analysis, write persuasive texts, create a design, develop the website, and perform SEO optimization.</p>
+          <p class="price-title">from 16 000 UAH</p>
+        </div>
+      </div>
+    </div>
+    <div class="block-site" id="block-site-2" style="display: none">
+      <div class="site-services">
+        <h3 class="title-block">A template website.</h3>
+        <p class="text-block">An excellent option for medium-sized businesses with limited budgets and timelines.</p>
+        <p class="title-price">from 16 000 UAH</p>
+        <div class="services-images">
+          <img class="yellow1" src="../img/yellow1.png" alt="">
+          <img class="semicircle" src="../img/semicircle.png" alt="">
+        </div>
+      </div>
+      <div class="site-services">
+        <h3 class="title-block">With your design</h3>
+        <p class="text-block">The perfect solution for medium-sized businesses that already have a design and only need website development.</p>
+        <p class="title-price">from 16 000 UAH</p>
+        <div class="services-images">
+          <img class="blue-top" src="../img/blue-top.png" alt="">
+          <img class="small-ball" src="../img/small-ball.png" alt="">
+          <img class="blue-blacktop" src="../img/blue-blacktop.png" alt="">
+        </div>
+      </div>
+      <div class="site-services">
+        <h3 class="title-block">With a unique design</h3>
+        <p class="text-block"> An effective way for medium-sized businesses to increase brand awareness and stand out from competitors.</p>
+        <p class="title-price">from 16 000 UAH</p>
+        <div class="services-images">
+          <img class="semicircle2" src="../img/semicircle2.png" alt="">
+          <img class="peach" src="../img/peach.png" alt="">
+        </div>
+      </div>
+      <div class="site-block">
+        <div class="site-img">
+          <img class="boys-img" src="../img/boys2.png" alt="">
+          <img class="blue-bottom" src="../img/blue-bottom.png" alt="">
+          <img class="blue-black" src="../img/blue-black.png" alt="">
+        </div>
+        <div class="services-site">
+          <h3 class="title-block">A turnkey website</h3>
+          <p class="text-block">We will provide a full-cycle website development, from idea to final result. We will conduct competitor analysis, write persuasive texts, create a design, develop the website, and perform SEO optimization.</p>
+          <p class="price-title">from 16 000 UAH</p>
+        </div>
+      </div>
+    </div>
+    <div class="block-site" id="block-site-3" style="display: none">
+      <div class="site-services">
+        <h3 class="title-block">A template website</h3>
+        <p class="text-block">A convenient and effective way to quickly start selling products or services online.</p>
+        <p class="title-price">from 16 000 UAH</p>
+        <div class="services-images">
+          <img class="yellow" src="../img/yellow.png" alt="">
+          <img class="black1" src="../img/black1.png" alt="">
+        </div>
+      </div>
+      <div class="site-services">
+        <h3 class="title-block">With your design</h3>
+        <p class="text-block">If you have a unique vision for an online store, we will develop it in accordance with your design and brand style.</p>
+        <p class="title-price">from 16 000 UAH</p>
+        <div class="services-images">
+          <img class="red-top" src="../img/red-top.png" alt="">
+          <img class="black2" src="../img/black2.png" alt="">
+          <img class="red-black" src="../img/reb-black.png" alt="">
+        </div>
+      </div>
+      <div class="site-services">
+        <h3 class="title-block">With a unique design</h3>
+        <p class="text-block">Developing a website design according to its specific needs is the best option for large businesses.</p>
+        <p class="title-price">from 16 000 UAH</p>
+        <div class="services-images">
+          <img class="blue" src="../img/blue.png" alt="">
+          <img class="black3" src="../img/black-3.png" alt="">
+        </div>
+      </div>
+      <div class="site-block">
+        <div class="site-img">
+          <img class="boys-img" src="../img/boys3.png" alt="">
+          <img class="red-bottom" src="../img/red-bottom.png" alt="">
+          <img class="red-black-bottom" src="../img/red-black-bottom.png" alt="">
+        </div>
+        <div class="services-site">
+          <h3 class="title-block">A turnkey website</h3>
+          <p class="text-block">We will provide a full-cycle website development, from idea to final result. We will conduct competitor analysis, write persuasive texts, create a design, develop the website, and perform SEO optimization.</p>
+          <p class="price-title">from 16 000 UAH</p>
+        </div>
+      </div>
+    </div>
+    <div class="block-site" id="block-site-4" style="display: none">
+      <div class="site-services-two">
+        <h3 class="title-block">Website design</h3>
+        <p class="text-block">Let's create a custom website design based on the business goals and target audience, in accordance with its specific needs.</p>
+        <p class="title-price">from 16 000 UAH</p>
+        <div class="services-images">
+          <img class="pink-top" src="../img/pink-top.png" alt="">
+          <img class="pink-black" src="../img/pink-black.png" alt="">
+        </div>
+      </div>
+      <div class="site-services-two">
+        <h3 class="title-block">SEO website audit</h3>
+        <p class="text-block">We will conduct an analysis of the website for technical errors and overall site performance. This will allow us to implement a set of measures to address any project errors that hinder its successful promotion on the Internet.</p>
+        <p class="title-price">from 16 000 UAH</p>
+        <div class="services-images">
+          <img class="black-pink" src="../img/black-pink.png" alt="">
+          <img class="yellow-pink" src="../img/yellow-pink.png" alt="">
+        </div>
+      </div>
+      <div class="site-block-two" >
+        <div class="site-img">
+          <img class="girl-img" src="../img/girl4.png" alt="">
+          <img class="pink-bottom" src="../img/pink-bottom.png" alt="">
+        </div>
+        <div class="services-site">
+          <h3 class="title-block">Website maintenance</h3>
+          <p class="text-block">We will ensure continuous monitoring of the website's performance, including the development of new functionality, CMS updates, technical audit, and much more as part of the website maintenance. In other words, this ensures the full functioning of the Internet resource.</p>
+          <p class="price-title">from 16 000 UAH</p>
+        </div>
+      </div>
+    </div>
+    <button class="btn">Get a consultation</button>
+  </div>
+</section>
+<section class="advantage">
+  <div class="container">
+    <h2 class="title">Advantages</h2>
+    <div class="list">
+      <div class="points">
+        <p class="points-text">We develop websites based on the business goals and their customers.</p>
+      </div>
+      <div class="points">
+        <p class="points-text">We provide full-cycle website development, from the client's idea to the final result.</p>
+      </div>
+      <div class="points">
+        <p class="points-text">We care about the success of your business because it's our success too.</p>
+      </div>
+      <div class="points">
+        <p class="points-text">We guarantee support at every stage and after the launch of the project.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="faq">
+  <div class="container">
+    <h2 class="faq-title">Frequently Asked Questions (FAQ).</h2>
+    <div class="faq-block">
+      <div class="faq-section">
+        <h3 class="title">How is the cost of a website determined?</h3>
+        <button class="faq-toggle-button">
+          <span class="faq-toggle-button-icon"></span>
+        </button>
+        <p class="text">The rates for websites are determined based on the functions that the website should perform. If you need a representation on the web with brief information about the company and contact details, a "Business card" will be sufficient. If you want to showcase a catalog of products and services with their descriptions and prices, then the "Ready-made product catalogs" option would be suitable. If your plans include direct online sales, then a full-fledged online store will be required. As you can see, the more requirements for the website, the more expensive it will be.</p>
+      </div>
+      <div class="faq-section">
+        <h3 class="title">What is the timeframe for creating a website?</h3>
+        <button class="faq-toggle-button">
+          <span class="faq-toggle-button-icon"></span>
+        </button>
+        <p class="text">The timeframe for creating a website depends on various factors, such as the complexity of design and functionality, the number of pages, types of content, and much more.
+          When assessing the time required to create a website, we take into account all these factors and determine how much time is needed for each stage of the website development process.
+          Usually, we aim to create a website for our clients within 2-8 weeks. However, this may vary depending on the project requirements and possible delays in the development process.
+          We always strive to meet deadlines and provide our clients with a quality and professional website within the agreed timeframe. If you have specific deadlines for creating a website, let us know, and we will do our best to meet them.</p>
+      </div>
+      <div class="faq-section">
+        <h3 class="title">Can I edit the website myself?</h3>
+        <button class="faq-toggle-button">
+          <span class="faq-toggle-button-icon"></span>
+        </button>
+        <p class="text">The ability to edit a website depends on how it was created and what content you plan to edit. If your website was created on a content management system (CMS) such as WordPress, Joomla, or Drupal, you can access the administrative panel and edit content on your website. This may include changing text, adding new pages, and uploading images.
+          If your website was created without using a CMS, you may need more technical skills and knowledge of HTML and CSS to edit content on your website. In this case, we can provide you with training and guidance on how to work with your website.
+          Additionally, we can design a website in a way that allows you to easily edit it, even if you don't have technical skills. For example, we can use plugins or tools that allow for easy content editing on your website.
+          In any case, we always strive to create a website that you can easily edit and manage according to your needs and goals. If you have any questions or need additional assistance, we are always ready to provide you with support and consultation.</p>
+      </div>
+      <div class="faq-section">
+        <h3 class="title">What is included in the cost of a website?</h3>
+        <button class="faq-toggle-button">
+          <span class="faq-toggle-button-icon"></span>
+        </button>
+        <p class="text">The cost of a website can vary depending on many factors such as the complexity of the design, functional requirements, amount of content, integration of third-party services, and more. Here are some of the main components that may be included in the cost of creating a website:</p>
+        <p class="text">Design and development: this includes website design development, coding and programming of website features.</p>
+        <p class="text">1. Domain name and hosting: In order for your website to be accessible on the internet, you need to register a domain name and choose a hosting provider that will store your website and ensure its availability.<br>
+          2. Content: This may include writing text, creating images and video content, setting up meta tags and other elements that help optimize your website for search engines.<br>
+          3. SEO optimization: This involves configuring your site and its content to improve the ranking of your site in search engines so that it is more visible to your target audience.<br>
+          4. Technical support: This may include website support, content updates, and site security setup.<br>
+          5. Additional expenses: This may include integration of third-party services, such as payment systems, email setup, and other features that may be important for your website.
+        <p class="text">All of these factors can affect the cost of creating a website, so we always provide a customized estimate for each project, taking into account its unique requirements and features.</p>
+      </div>
+      <div class="faq-section">
+        <h3 class="title">Do you work on a prepayment basis?</h3>
+        <button class="faq-toggle-button">
+          <span class="faq-toggle-button-icon"></span>
+        </button>
+        <p class="text">Yes, we require a prepayment for our services. This is because creating a website is a complex and time-consuming process that requires significant time and resources. Prepayment allows us to ensure financial stability and complete the project on time, as well as reduce the risks of non-payment or non-completion of the work. We guarantee that you will receive a high-quality product and full control over the website creation process throughout the project.</p>
+      </div>
+      <div class="faq-section">
+        <h3 class="title">What is the order of work for creating a website?</h3>
+        <button class="faq-toggle-button">
+          <span class="faq-toggle-button-icon"></span>
+        </button>
+        <p class="text">An online store is a business, and like any other entrepreneurial activity, it requires constant investment that, with the right distribution and approach, converts into income. Among the constant expenses, despite their insignificance, are the payment for the domain and hosting (annual). It is also necessary to budget for advertising and promoting the website.</p>
+      </div>
+      <div class="faq-section">
+        <h3 class="title">What is the difference between a website based on a ready-made template and custom development?</h3>
+        <button class="faq-toggle-button">
+          <span class="faq-toggle-button-icon"></span>
+        </button>
+        <p class="text">This is a quick and cheaper way to create a website that uses a ready-made design and functionality. It can be quite easy to use and allows you to quickly launch your website online. However, such a website may not always meet the individual needs of your business.
+          A custom-designed website allows you to get a unique design that better reflects the individuality of your business. It can be more functional and better suited to your needs. However, the process of creating a website takes more time and can be more expensive than using a ready-made template.
+          In addition, a custom-designed website can be better optimized for search engines, which can help improve its position in search results. The choice between a ready-made template and custom development depends on your needs and budget. We offer both options and will help you choose the best one for your business.</p>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="connection" id="connection">
+  <div class="container">
+    <div class="title-connection">Contacts</div>
+    <div class="block-contacts">
+      <div class="mail">
+        <h3 class="title">Email:</h3>
+        <a class="message" href="mailto:yezersky96@gmail.com">yezersky96@gmail.com</a>
+      </div>
+      <div class="phone">
+        <h3 class="title">Phone:</h3>
+        <a class="message" href="tel:380635777473">+38(063)-577-74-73 </a>
+      </div>
+      <div class="messages">
+        <h3 class="title">Whatsapp:</h3>
+        <a class="message" href="https://wa.me/380635777473">+38(063)-577-74-73</a>
+      </div>
+      <div class="telegram">
+        <h3 class="title">Telegram:</h3>
+        <a class="message" href="tg://user?id=+380635777473">@yezersky96</a>
+
+      </div>
+      <div class="viber">
+        <h3 class="title">Viber:</h3>
+        <a class="message" href="https://chats.viber.com/+380635777473">+38(063)-577-74-73</a>
+      </div>
+    </div>
+  </div>
+</section>
+<footer class="footer">
+  <div class="container">
+    <div class="block">
+      <div class="block-footer">
+        <div class="block-logo">
+          <a href="#" class="logo">
+            <img src="../img/wolflogo.png" alt="Wolf">
+          </a>
+          <p class="text-logo-footer">2023 © Web studio Wolf All rights reserved</p>
+        </div>
+      </div>
+      <div class="footer-block">
+        <div class="block-services">
+          <a class="text-footer" href="#block-site-1-link">One-page websites</a>
+          <a class="text-footer" href="#block-site-2-link">Corporate websites</a>
+          <a class="text-footer" href="#block-site-3-link">E-commerce websites</a>
+          <a class="text-footer" href="#block-site-4-link">Additional services</a>
+        </div>
+        <div class="block-menu">
+          <a class="text-footer" href="#summary">About Us</a>
+          <a class="text-footer" href="#services">Services</a>
+          <!--                <a class="text-footer" href="">Портфолио</a>-->
+          <a class="text-footer" href="#connection">Contacts</a>
+        </div>
+        <div class="block-contact">
+          <h3 class="block-title">Email:</h3>
+          <a class="message-footer" href="mailto:yezersky96@gmail.com">yezersky96@gmail.com</a>
+          <h3 class="block-title">Phone:</h3>
+          <a class="message-footer" href="tel:380635777473">+38(063)-577-74-73</a>
+        </div>
+        <a href="#" class="back-to-top"><i class="fas fa-arrow-up"></i></a>
+
+      </div>
+
+    </div>
+  </div>
+</footer>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+<script src="../js/script.js"></script>
+</body>
+</html>

@@ -76,6 +76,22 @@ nav.nav-main a:hover {
 .nav-toggle-close {
   display: none;
 }
+.language {
+  width: 3%;
+  margin: 15px 0;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 17px;
+  color: #C1C1C1;
+  text-decoration: none;
+  text-align: center;
+}
+.language:hover {
+  background: #FFB234;
+  color: black;
+  border-radius: 10px;
+}
 
 @media screen and (max-width: 1200px) {
 
