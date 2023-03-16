@@ -260,9 +260,6 @@ nav.nav-main a:hover {
   .dropdown {
     display: none;
   }
-  .language{
-    width: 10%  ;
-  }
 }
 @media screen and (max-width: 576px) {
   .descriptor .title {
@@ -270,5 +267,8 @@ nav.nav-main a:hover {
   }
   .descriptor .text {
     font-size: 17px;
+  }
+  .language{
+    width: 10%;
   }
 }
