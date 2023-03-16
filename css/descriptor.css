@@ -275,6 +275,9 @@ input {
   .descriptor .title {
     margin-top: 20px;
   }
+  .boys-img-title {
+    width: 100%;
+  }
   input {
     width: 100%;
     margin: 15px auto 0 auto;
