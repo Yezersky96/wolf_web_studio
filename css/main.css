@@ -87,6 +87,7 @@ nav.nav-main a:hover {
   text-decoration: none;
   text-align: center;
 }
+
 .language:hover {
   background: #FFB234;
   color: black;
@@ -103,7 +104,7 @@ nav.nav-main a:hover {
     display: block;
   }
   .language {
-    width: 2%;
+    width: 5%;
     margin-left: 20px;
   }
   .logo {
@@ -258,6 +259,9 @@ nav.nav-main a:hover {
   }
   .dropdown {
     display: none;
+  }
+  .language{
+    width: 10%  ;
   }
 }
 @media screen and (max-width: 576px) {
