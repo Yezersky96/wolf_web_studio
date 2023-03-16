@@ -81,6 +81,9 @@
   font-size: 21px;
   cursor: pointer;
 }
+.pop_up_close:hover {
+  color: #ffb234;
+}
 input {
   display: block;
   margin: 25px auto 0 auto;
@@ -160,6 +163,9 @@ input {
   bottom: 0;
   z-index: 1;
   margin-top: 150px;
+}
+.boys-img {
+  float: right;
 }
 .btn {
   font-style: normal;

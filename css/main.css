@@ -59,7 +59,8 @@ nav.nav-main a {
   text-align: center;
 }
 nav.nav-main a:hover {
-  border-bottom: 2px solid black;
+  border-bottom: 2px solid #ffb234;
+  color: #ffb234;
 }
 .nav-toggle {
   display: none;
@@ -91,7 +92,9 @@ nav.nav-main a:hover {
   color: black;
   border-radius: 10px;
 }
-
+.tel:hover {
+  color: #ffb234;
+}
 @media screen and (max-width: 1200px) {
 
 }
